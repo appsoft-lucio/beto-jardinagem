@@ -1,16 +1,28 @@
+/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e9f7e9; /* Cor de fundo suave de jardinagem */
-  color: #2f4f2f; /* Verde escuro */
+  background-color: #e9f7e9;
+  color: #2f4f2f;
+}
+
+/* Menu fixo e transparente */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 139, 34, 0.8); /* Verde com transparência */
+  color: white;
+  padding: 10px;
+  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
-  background-color: #228b22; /* Verde mais forte para o menu */
   margin: 0;
-  padding: 10px;
+  padding: 0;
   text-align: center;
 }
 
@@ -23,16 +35,24 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
 }
 
+nav ul li a:hover {
+  background-color: #2e8b57; /* Efeito ao passar o mouse */
+}
+
+/* Seções */
 section {
   padding: 40px;
   margin: 20px 0;
 }
 
 #intro {
-  background-color: #a8e6a3; /* Verde claro para introdução */
+  background-color: #a8e6a3;
   text-align: center;
+  margin-top: 60px; /* Para dar espaçamento após o menu fixo */
 }
 
 #sobre,
@@ -50,6 +70,19 @@ h3 {
   color: #2f4f2f;
 }
 
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .servico {
+    width: 100%;
+  }
+}
+
+/* Estilo das imagens de serviço */
 .servico {
   display: inline-block;
   width: 30%;
@@ -62,6 +95,7 @@ h3 {
   height: auto;
 }
 
+/* Formulário */
 form input,
 form textarea,
 form button {
@@ -81,9 +115,38 @@ form button:hover {
   background-color: #2e8b57;
 }
 
+/* Rodapé */
 footer {
   background-color: #228b22;
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+/* Efeito de transição suave para rolagem */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo do botão WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Ajustes no hover do botão WhatsApp */
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
