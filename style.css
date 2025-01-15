@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f7e9; /* Cor de fundo suave de jardinagem */
+  color: #2f4f2f; /* Verde escuro */
+}
+
+nav ul {
+  list-style: none;
+  background-color: #228b22; /* Verde mais forte para o menu */
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+section {
+  padding: 40px;
+  margin: 20px 0;
+}
+
+#intro {
+  background-color: #a8e6a3; /* Verde claro para introdução */
+  text-align: center;
+}
+
+#sobre,
+#servicos,
+#contato {
+  background-color: #f4f9f4;
+}
+
+h1,
+h2 {
+  color: #228b22;
+}
+
+h3 {
+  color: #2f4f2f;
+}
+
+.servico {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.servico img {
+  width: 100%;
+  height: auto;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #228b22;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2e8b57;
+}
+
+footer {
+  background-color: #228b22;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
